@@ -1,0 +1,379 @@
+.menu-bg{
+    background-color: #343A40;
+}
+
+.aa {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+.aa::-webkit-scrollbar {
+  width: 7px; /* Adjust the width of the scrollbar */
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Track (the area behind the thumb) */
+.aa::-webkit-scrollbar-track {
+  background-color: #343A40; /* Background color of the track */
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Thumb (the draggable part) */
+.aa::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+  opacity: 0;
+  visibility: hidden;
+}
+
+.aa:hover::-webkit-scrollbar,
+.aa:hover::-webkit-scrollbar-track,
+.aa:hover::-webkit-scrollbar-thumb{
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-hover{
+    color:#c2c7d0
+}
+
+.menu-hover:hover{
+    color: white;
+    background-color: #494E53;
+    border-radius: 5px;
+}
+
+.nav-icon{
+    color: rgba(0,0,0,.7);
+}
+
+.nav-icon:hover{
+    color: black !important;
+}
+
+
+
+ .brand-text {                          /* text 0 karva */
+  transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease;
+}
+ .dropdown ul {                         /* height 0 karva */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease; /* Adjust the duration as needed */
+}
+
+.my-transition {
+  transition: height 300ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.side-bar ul li:hover > a,.side-bar ul li:hover > div{
+  background-color: #494E53;
+  color: white ;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.side-bar ul li a,.side-bar ul li div{
+  display: inline-flex;
+  padding: 8px 16px 8px;
+  margin-bottom: 4px;
+  width: 100%;
+  align-items: center !important;
+  cursor: pointer;
+  border-radius: 5px;
+ color:  rgba(255,255,255,.8);
+}
+
+.active {
+  background-color: #007BFF;
+  color: white !important;
+  transition: 0.5s;
+  /* Add other styling as needed */
+}
+.side-bar ul li:hover > .active{
+  background-color: #007BFF !important;
+}
+.activeIn{
+  background-color: white;
+  color: black !important;
+  transition: 0.5s;
+  /* Add other styling as needed */
+}
+.activeIn:hover{
+  background-color: white !important;
+}
+
+.login-input input {
+  outline: none;
+}
+
+
+
+@media screen and (max-width:430px){
+  .direction-content{
+    flex-direction: column;
+    align-items: start;
+
+  }
+}
+
+/* tr:hover .text{
+  font-size: 16px !important;
+} */
+
+
+.w-250px{
+  width: 250px;
+}
+
+.w-73px{
+  width: 73px;
+}
+
+/* .w-73px:hover{
+ width: 292.97px;
+} */
+
+
+
+.full{
+  width: calc(100% - 250px) !important;
+}
+
+.full-1{
+  width: calc(100% - 73px) !important;
+}
+
+
+
+
+.custom-scrollbar {
+  overflow-y: auto;
+  height: calc(100vh - 200px);
+} 
+
+.custom-scrollbar::-webkit-scrollbar,.addContent::-webkit-scrollbar {
+  width: 5px; 
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb,.addContent::-webkit-scrollbar-thumb {
+  background-color: #88888871; 
+  border-radius: 5px; 
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover,.addContent::-webkit-scrollbar-thumb:hover {
+  background-color: #55555576; 
+}
+
+
+/* @media screen and (min-width:1024px){
+  .form-height{
+    height: calc(100vh - 154.1px) ;
+  }
+} */
+@media screen and (min-width:671px){
+  .form-height{
+    height: calc(100vh - 154.1px) ;
+  }
+  .add-height{
+    height: calc(100vh - 123.01px) ;
+  }
+}
+
+@media screen and (min-width:641px)and (max-width:670px){
+  .form-height{
+    height: calc(100vh - 182.1px) !important ;
+  }
+  .add-height{
+    height: calc(100vh - 150.67px) ;
+  }
+}
+/* @media screen and (min-width:768px) and (max-width:1023px){
+  .form-height{
+    height: calc(100vh - 122.1px) ;
+  }
+} */
+/* @media screen and (min-width:640px)and (max-width:767px){
+  .form-height{
+    height: calc(100vh - 90.1px) ;
+  }
+} */
+@media screen and (min-width:0)and (max-width:400px){
+  .text-name{
+    font-size: 20px ;
+  }
+  .text-name-all{
+    font-size: 14px ;
+    padding-bottom: 3px;
+    padding-right: 0px;
+
+  }
+  .text_12{
+    font-size: 13.5px;
+    padding-right: 0px;
+    padding-bottom: 3px;
+  }
+  .text_12_cource{
+    font-size: 12px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+  }
+}
+@media screen and (min-width:0)and (max-width:640px){
+  .form-height{
+    height: calc(100vh - 174.1px) !important;
+  }
+  .add-height{
+    height: calc(100vh - 150.67px) ;
+  }
+}
+
+@media screen and (max-width:670px){
+  .flex_col{
+    flex-direction: column;
+    align-items: normal;
+  }
+  .text{
+    margin-top: 4px;
+    text-align: left !important;
+  }
+}
+
+
+.addstudent input::placeholder {
+  font-size: 14px; 
+}
+
+
+.addstudent input:focus,.addstudent textarea:focus,.addstudent select:focus{
+  border-color: #5a67d8 !important;
+}
+
+.addstudent input:focus-visible,.addstudent textarea:focus-visible,.addstudent select:focus-visible{
+  /* outline-offset: none !important; */
+  outline: none !important;
+}
+
+
+
+/* input[type='date']{
+  color: gray !important; 
+}
+select{
+  color: gray !important; 
+} */
+
+@media(prefers-reduced-motion: no-preference){
+  .App-Setting {
+    animation: App-Setting-spin infinite 7s linear;
+  }
+}
+
+@keyframes App-Setting-spin{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.text-28{
+  font-size: 28px;
+}
+
+.hover-icon-4:hover .icon11{
+  transform: scale(1.2) !important;
+}
+
+.foot-1:hover{
+  background-color:rgba(0,0,0,.15)!important; 
+  transition: 0.3s !important;
+}
+
+.foot-1{
+  cursor: pointer;
+}
+
+#mobile-menu {
+  transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out !important;
+}
+
+
+
+
+
+
+
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 58.67px; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  z-index: 10;
+  height: 0;
+  background:transparent;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+/* Active state */
+.modal.active {
+  height: 114px;
+  align-items: center; /* Center vertically */
+  transition: height 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+/* Modal Content */
+.modal-content {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  height: 100px;
+  border-radius: 8px;
+  /* box-shadow: 0px 0px 10px black; */
+  transform: translateY(-100%);
+  animation: slideDown 0.3s ease-in-out forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
