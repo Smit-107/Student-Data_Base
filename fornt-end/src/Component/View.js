@@ -82,7 +82,7 @@ const View = () => {
         <div className="bg-gray-100 m-8 md:mx-14">
           <div className="bg-white rounded-lg flex flex-col shadow-lg p-8">
             <div className="flex items-center justify-center">
-              <image
+              <img
                 src={
                   inputStudent.image
                     ? "http://localhost:5000/images/" + inputStudent.image
