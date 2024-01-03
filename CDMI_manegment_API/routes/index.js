@@ -5,7 +5,7 @@ const { Login, Register } = require('../Controller/LoginController');
 
 const cors = require('cors');
 const corsOptions ={
-    origin:'*', 
+    origin:'https://student-d-ui.vercel.app/', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
